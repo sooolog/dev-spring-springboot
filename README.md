@@ -8,4 +8,4 @@
 🚀 주요 개발 코드 개념들
 
 * SpringBoot Development Tools
-  * SpringBoot Devtools
+  * SpringBoot Devtools 적용
