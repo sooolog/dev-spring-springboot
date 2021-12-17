@@ -1,4 +1,4 @@
-package dev.spring.springboot.devspringspringboot.devtools.controller;
+package dev.spring.springboot.devspringspringboot.functions.devtools.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

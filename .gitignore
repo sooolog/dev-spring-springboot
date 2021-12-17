@@ -1,3 +1,7 @@
+### 보안 ###
+.properties
+.yaml
+.yml
 
 .gradle
 build/

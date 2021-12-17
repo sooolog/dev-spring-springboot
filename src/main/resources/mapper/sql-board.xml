@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dev.spring.springboot.devspringspringboot.functions.fileupload.mapper.BoardMapper">
+    <insert id="insertBoard" parameterType="dev.spring.springboot.devspringspringboot.functions.fileupload.dto.BoardDto" >
+
+            INSERT INTO t_board
+            (
+                title,
+                contents,
+                created_datetime,
+                creator_id
+            )
+            VALUES
+            (
+                #{title},
+                #{contents},
+                NOW(),
+                '임시작성자'
+            )
+    </insert>
+
+    <insert id="insertBoardFileList" parameterType="dev.spring.springboot.devspringspringboot.functions.fileupload.dto.BoardFileDto">
+        <![CDATA[
+            INSERT INTO t_file
+            (board_idx, original_file_name, stored_file_path, file_size, creator_id, created_datetime)
+            VALUES
+        ]]>
+        <foreach collection="list" item="item" separator=",">
+            (
+                #{item.boardIdx},
+                #{item.originalFileName},
+                #{item.storedFilePath},
+                #{item.fileSize},
+                '임시작성자',
+                NOW()
+            )
+        </foreach>
+    </insert>
+</mapper>
