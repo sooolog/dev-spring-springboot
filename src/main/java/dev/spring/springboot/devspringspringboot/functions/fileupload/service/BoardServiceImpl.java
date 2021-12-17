@@ -20,13 +20,11 @@ public class BoardServiceImpl implements BoardService{
 
     @Override
     public void insertBoard(BoardDto boardDto, MultipartHttpServletRequest multipartHttpServletRequest) throws Exception{
-
         boardMapper.insertBoard(boardDto);
         List<BoardFileDto> list = fileUtils.parseFileInfo(boardDto.getBoardIdx(), multipartHttpServletRequest);
         if (CollectionUtils.isEmpty(list) == false){
             boardMapper.insertBoardFileList(list);
         }
-
     }
 
 }
