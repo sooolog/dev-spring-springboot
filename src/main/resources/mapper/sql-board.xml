@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="dev.spring.springboot.devspringspringboot.functions.fileupload.mapper.BoardMapper">
-    <insert id="insertBoard" parameterType="dev.spring.springboot.devspringspringboot.functions.fileupload.dto.BoardDto" >
+    <insert id="insertBoard" parameterType="dev.spring.springboot.devspringspringboot.functions.fileupload.dto.BoardDto" useGeneratedKeys="true" keyProperty="boardIdx">
 
             INSERT INTO t_board
             (
