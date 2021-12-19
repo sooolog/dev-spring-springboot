@@ -16,7 +16,6 @@ public class FileUplodaController {
 
     @PostMapping("/fileupload")
     public String fileUpload1(BoardDto boardDto, MultipartHttpServletRequest multipartHttpServletRequest) throws Exception{
-        System.out.println(boardDto.getTitle());
         boardService.insertBoard(boardDto, multipartHttpServletRequest);
         return "redirect:/fileupload";
     }

@@ -4,7 +4,7 @@
 
 <mapper namespace="dev.spring.springboot.devspringspringboot.functions.fileupload.mapper.BoardMapper">
     <insert id="insertBoard" parameterType="dev.spring.springboot.devspringspringboot.functions.fileupload.dto.BoardDto" useGeneratedKeys="true" keyProperty="boardIdx">
-
+        <![CDATA[
             INSERT INTO t_board
             (
                 title,
@@ -17,14 +17,21 @@
                 #{title},
                 #{contents},
                 NOW(),
-                '임시작성자'
+                'admin'
             )
+        ]]>
     </insert>
 
     <insert id="insertBoardFileList" parameterType="dev.spring.springboot.devspringspringboot.functions.fileupload.dto.BoardFileDto">
         <![CDATA[
             INSERT INTO t_file
-            (board_idx, original_file_name, stored_file_path, file_size, creator_id, created_datetime)
+            (
+                board_idx,
+                original_file_name,
+                stored_file_path,
+                file_size,
+                creator_id,
+                created_datetime)
             VALUES
         ]]>
         <foreach collection="list" item="item" separator=",">
