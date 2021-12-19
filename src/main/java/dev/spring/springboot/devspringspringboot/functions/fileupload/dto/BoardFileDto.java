@@ -12,6 +12,4 @@ public class BoardFileDto {
     private String originalFileName;
     private String storedFilePath;
     private long fileSize;
-
-
 }
