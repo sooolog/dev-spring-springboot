@@ -19,7 +19,6 @@ public class FileUplodaController {
         System.out.println(boardDto.getTitle());
         boardService.insertBoard(boardDto, multipartHttpServletRequest);
         return "redirect:/fileupload";
-
     }
 
     @GetMapping("/fileupload")
