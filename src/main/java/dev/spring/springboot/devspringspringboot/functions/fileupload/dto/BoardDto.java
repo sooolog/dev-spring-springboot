@@ -16,4 +16,5 @@ public class BoardDto {
     private String updatedDatetime;
 
 
+
 }
