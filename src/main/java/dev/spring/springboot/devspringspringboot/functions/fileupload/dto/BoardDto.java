@@ -14,4 +14,5 @@ public class BoardDto {
     private String createdDatetime;
     private String updaterId;
     private String updatedDatetime;
+
 }
