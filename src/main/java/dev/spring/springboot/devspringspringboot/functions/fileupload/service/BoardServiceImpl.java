@@ -1,6 +1,7 @@
 package dev.spring.springboot.devspringspringboot.functions.fileupload.service;
 
 import dev.spring.springboot.devspringspringboot.common.FileUtils;
+import dev.spring.springboot.devspringspringboot.functions.fileupload.dto.BoardDto;
 import dev.spring.springboot.devspringspringboot.functions.fileupload.dto.BoardFileDto;
 import dev.spring.springboot.devspringspringboot.functions.fileupload.mapper.BoardMapper;
 import lombok.RequiredArgsConstructor;
