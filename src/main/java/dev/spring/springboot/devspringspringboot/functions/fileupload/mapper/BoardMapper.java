@@ -1,6 +1,5 @@
 package dev.spring.springboot.devspringspringboot.functions.fileupload.mapper;
 
-import dev.spring.springboot.devspringspringboot.functions.fileupload.dto.BoardDto;
 import dev.spring.springboot.devspringspringboot.functions.fileupload.dto.BoardFileDto;
 import org.apache.ibatis.annotations.Mapper;
 

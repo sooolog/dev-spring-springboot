@@ -1,6 +1,5 @@
 package dev.spring.springboot.devspringspringboot.functions.fileupload.controller;
 
-import dev.spring.springboot.devspringspringboot.functions.fileupload.dto.BoardDto;
 import dev.spring.springboot.devspringspringboot.functions.fileupload.service.BoardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
