@@ -17,7 +17,7 @@
                 #{title},
                 #{contents},
                 NOW(),
-                'admin'
+                'adminㅁ'
             )
         ]]>
     </insert>
@@ -40,7 +40,7 @@
                 #{item.originalFileName},
                 #{item.storedFilePath},
                 #{item.fileSize},
-                '임시작성자',
+                'abcdef',
                 NOW()
             )
         </foreach>
